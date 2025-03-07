@@ -1,0 +1,70 @@
+
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<section id="menu" class="container mt-5">
+    <h2>Our Menu</h2>
+    <div class="container">
+
+        <div class="row">
+            
+            <div class="col-md-4 menu-item">
+                    <a href="{% url "productdetail" %}">
+                    <div class="restaurant-card">
+                        <img src="{% static "core/images/s2.jpg" %}" alt="Dish 1" class="img-fluid">
+                        <h3>BURGER</h3>
+                        <p>Our signature burger with a juicy beef patty, crisp lettuce, ripe tomato, and our special house sauce, all nestled in a toasted brioche bun.</p>
+                        <p class="price">$12.99</p>
+                        <p class="summary">A classic favorite with a gourmet twist.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 menu-item">
+                    <a href="">
+                    <div class="restaurant-card">
+                        <img src="{% static "core/images/s2.jpg" %}" alt="Dish 1" class="img-fluid">
+                        <h3>BURGER</h3>
+                        <p>Our signature burger with a juicy beef patty, crisp lettuce, ripe tomato, and our special house sauce, all nestled in a toasted brioche bun.</p>
+                        <p class="price">$12.99</p>
+                        <p class="summary">A classic favorite with a gourmet twist.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 menu-item">
+                    <a href="">
+                    <div class="restaurant-card">
+                        <img src="{% static "core/images/s2.jpg" %}" alt="Dish 1" class="img-fluid">
+                        <h3>BURGER</h3>
+                        <p>Our signature burger with a juicy beef patty, crisp lettuce, ripe tomato, and our special house sauce, all nestled in a toasted brioche bun.</p>
+                        <p class="price">$12.99</p>
+                        <p class="summary">A classic favorite with a gourmet twist.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 menu-item">
+                    <a href="">
+                    <div class="restaurant-card">
+                        <img src="{% static "core/images/s2.jpg" %}" alt="Dish 1" class="img-fluid">
+                        <h3>BURGER</h3>
+                        <p>Our signature burger with a juicy beef patty, crisp lettuce, ripe tomato, and our special house sauce, all nestled in a toasted brioche bun.</p>
+                        <p class="price">$2.99</p>
+                        <p class="summary">A classic favorite with a gourmet twist.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 menu-item">
+                    <a href="{% url "productdetail" %}">
+                    <div class="restaurant-card">
+                        <img src="{% static "core/images/PIZZA.JPG" %}" alt="Dish 1" class="img-fluid">
+                        <h3>pizza</h3>
+                        <p>Our signature burger with a juicy beef patty, crisp lettuce, ripe tomato, and our special house sauce, all nestled in a toasted brioche bun.</p>
+                        <p class="price">$12.99</p>
+                        <p class="summary">A classic favorite with a gourmet twist.</p>
+                    </div>
+                </a>
+            </div>
+            
+    </div>
+</div>
+</section>
+{% endblock content %}
