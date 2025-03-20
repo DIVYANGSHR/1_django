@@ -1,0 +1,40 @@
+#contact{
+    margin-top: 100px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#contact input{
+    background-color: rgba(161,109,14,1);
+}
+#contact input::placeholder{
+    color: white;
+}
+#contact textarea{
+    background-color: rgba(161,109,14,1);
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: rgba(161,109,14,1);
+}
