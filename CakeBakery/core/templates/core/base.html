@@ -2,28 +2,26 @@
 {% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="core/css/bootstrap.min.css">
-    <link rel="stylesheet" href="core/css/style.css">
-    <link rel="stylesheet" href="{% static "core/css/navbar.css" %}">
-    <link rel="stylesheet" href="{% static "core/css/footer.css" %}">
-    <link rel="stylesheet" href="{% static "core/css/about.css" %}">
-    <link rel="stylesheet" href="{% static "core/css/contact.css" %}">
-    <link rel="stylesheet" href="{% static "core/css/home.css" %}">
-    <link rel="stylesheet" href="{% static "core/css/product.css" %}">
-    <link rel="stylesheet" href="{% static "core/css/banner.css" %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image" href="./image/logo.png">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <title>Cake Bakery</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="core/css/bootstrap.min.css">
+  <link rel="stylesheet" href="core/css/style.css">
+  <link rel="stylesheet" href="{% static "core/css/navbar.css" %}">
+  <link rel="stylesheet" href="{% static "core/css/footer.css" %}">
+  <link rel="stylesheet" href="{% static "core/css/about.css" %}">
+  <link rel="stylesheet" href="{% static "core/css/contact.css" %}">
+  <link rel="stylesheet" href="{% static "core/css/home.css" %}">
+  <link rel="stylesheet" href="{% static "core/css/product.css" %}">
+  <link rel="stylesheet" href="{% static "core/css/banner.css" %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image" href="./image/logo.png">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+  <title>Cake Bakery</title>
 
-    
+   
 </head>
 <body>
 
@@ -33,11 +31,11 @@
     {% include "core/navbar.html" %}
     {% block content %}{% endblock content %}
     {% include "core/footer.html" %}
-    {% comment %} {% include "core/about.html" %}
+    {% include "core/about.html" %}
     {% include "core/contact.html" %}
     {% include "core/home.html" %}
     {% include "core/product.html" %}
-    {% include "core/banner.html" %} {% endcomment %}
+    {% include "core/banner.html" %} 
 
 
 
@@ -46,19 +44,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 
-
-
-
-
-    <div class="all-content">
-        <a href="#" class="arrow"><i><img src="{% static "core/image/up-arrow.png" %}" alt="" width="50px"></i></a>
-  
-  
-  
-      </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-          AOS.init();
-        </script>
 </body>
 </html>
