@@ -1,0 +1,589 @@
+
+.marque{
+    background-color: black;
+    color: whitesmoke;
+    transition-duration: 0ms;
+    transition-delay: 0ms;
+    
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+pre{
+    margin-top: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* For Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    body {
+        font-size: 18px; 
+        padding: 15px;
+    }
+}
+
+/* For Tablets (Portrait and Landscape) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #logo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #navbarbtns {
+        display: block; /* Stack buttons vertically */
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #smallcard {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+/* For Mobile Devices (Small Screens) */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #navbarbtns {
+        font-size: 16px;
+    }
+
+    #arrow-icon, #arrowi, #arrowii {
+        margin-left: 0; 
+        display: block;
+        text-align: center;
+    }
+
+    #img, #img2 {
+        width: 100%;
+        height: auto;
+    }
+
+    #all, #shirts, #ttshirts, #tro {
+        margin: 5px 0;
+        width: 100%; /* Make buttons full width on mobile */
+        text-align: center;
+    }
+
+    #sbc {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Responsive for Tablets */
+@media (max-width: 768px) {
+    .icon-container {
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center; /* Center-align on smaller screens */
+        gap: 10px;
+    }
+
+    .icon-item h3 {
+        font-size: 13px; /* Slightly smaller text */
+    }
+}
+
+/* Responsive for Mobile Devices */
+@media (max-width: 576px) {
+    .icon-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        gap: 15px; /* Space between items */
+    }
+
+    .icon-item {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .icon-item img {
+        width: 40px; /* Slightly smaller icons */
+        height: 40px;
+    }
+
+    .icon-item h3 {
+        font-size: 12px;
+    }
+}
+
+
+/*navbar*/
+#searchbtn{
+    border: none;
+    color: black;
+    
+}
+
+#searchbar{
+    border-radius: 50px;
+}
+
+
+#logo{
+    font-weight: bolder;
+    color: red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+#navbarbtns{
+    color: black;
+}
+
+#navbarbtns:hover{
+    color: red;
+    border: 1ppx solid red;
+   transform: scale(1.03);
+  
+}
+
+/*carousel*/
+
+#smallcard{
+    height: 700px;
+   width: 150px;
+    margin-right: 100px;
+    
+}
+.carousel-margin {
+    margin-right: 50px !important; 
+}
+
+#smallcard:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease-out;
+}
+
+
+.item {
+    opacity: 0; 
+    transition: opacity 0.2s ease-in-out; 
+}
+
+.active {
+    opacity: 1; 
+}
+
+
+#featureitem{
+    color: rgb(133, 117, 117);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+#classy{
+    color: black;
+    font-family:serif;
+    margin-left: 122px;
+    margin-right: 100px;
+    
+}
+
+#line{
+ margin-left: 122px;
+ margin-right: 100px;
+ color: black;
+}
+
+.oneside{
+    text-decoration: none;
+}
+
+#shy{
+    margin-left: 122px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: serif;
+}
+#arrow-icon {
+    margin-left: 440px; 
+    font-size: 15px; 
+    vertical-align: middle; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+#arrowi{
+    margin-left: 300px; 
+    font-size: 15px; 
+    vertical-align: middle; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+#arrowii{
+    margin-left: 415px; 
+    font-size: 15px; 
+    vertical-align: middle; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+
+
+#shy:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    color: red;
+}
+
+#arrowii:hover{
+    transform: scale(1.10);
+    transition: transform 0.5s ease-in-out;
+    color: deeppink;
+   
+}
+
+#arrow-icon:hover{
+    transform: scale(1.10);
+    transition: transform 0.5s ease-in-out;
+    color: deeppink;
+}
+
+#arrowi:hover{
+    transform: scale(1.10);
+    transition: transform 0.5s ease-in-out;
+    color: deeppink;
+   
+}
+
+
+/*first card*/
+
+#sbc{
+    color: black;
+    font-weight: 550;
+    margin-left: 650px;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#shortsleeves{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    margin-left: 79px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#tshirts{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    margin-left: 105px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#cargo{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    margin-left: 73px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+#shorts{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    margin-left: 115px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+
+/*after 1 card */
+
+#popularitems{
+    margin-left: 120px;
+    font-family: serif;
+
+}
+
+#all{
+    margin-left: 120px;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-left: 10px;
+    padding-right:10px ;
+   border: none;
+    font-size:medium;
+
+    
+}
+
+#shirts{
+    margin-left: 4px; 
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: rgb(224, 219, 219);
+    padding-left: 10px;
+    padding-right:10px ;
+border: none;
+    font-size:medium;
+    
+    color: rgb(0, 0, 0);
+
+}
+
+#shirts:active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: translateY(4px);
+}
+
+#ttshirts{
+    margin-left: 4px; 
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: rgb(224, 219, 219);
+    padding-left: 10px;
+    padding-right:10px ;
+ border: none;
+    font-size:medium;
+    
+    color: rgb(0, 0, 0);
+}
+#ttshirts:active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: translateY(4px);
+}
+
+#tro{
+    margin-left: 4px; 
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: rgb(224, 219, 219);
+    padding-left: 10px;
+    padding-right:10px ;
+ border: none;
+    font-size:medium;
+    
+    color: rgb(0, 0, 0);
+}
+#tro:active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: translateY(4px);
+}
+    
+
+/* iconss last */
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 20px; /* Space between icons */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.icon-item {
+    text-align: center;
+    flex: 1; /* Makes items grow evenly */
+    min-width: 120px; /* Ensures icons don't get too small */
+}
+
+.icon-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-item h3 {
+    margin-top: 8px;
+    font-size: 14px;
+    color: black;
+}
+
+
+/*register page*/
+
+.register-page {
+    background-image: url('asset/trending/black-man-wearing-suit-isolated_23-2151808530\ png.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+.form-container {
+    box-shadow: 2px 2px 3px 0px rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(147, 137, 137);
+}
+.navbar {
+    background-color: transparent
+}
+.navbar-brand h1 {
+    color: white;
+    font-weight: 500;
+}
+.btn-outline-success {
+    border-color: #28a745;
+    color: #28a745;
+}
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+}
+a {
+    color: rgb(0, 0, 0);
+}
+
+
+/*help page*/
+
+.Help-page {
+    background-image: url('https://img.freepik.com/free-photo/businessman-portrait-studio-with-copy-space_23-2148500434.jpg?t=st=1729621080~exp=1729624680~hmac=92f4d496dddcd014cefaf9a1fe30163c2bc8e9310c17856eee5390fb8ab4efa6&w=1060');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* Profile Page Styling */
+body.profile-page {
+    background-image: url('https://img.freepik.com/free-photo/creative-wallpaper-with-grey-cubes_23-2148811493.jpg?t=st=1729620072~exp=1729623672~hmac=05e3984d1f86ef20aba6f0d89e4d1708a33cd379700a1b6b51014310ef801f4c&w=900'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Form container styling */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/*trending*/
+
+
+
+
+/* Card container with smooth scaling */
+.product-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image styling */
+.card-img-top {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Product info container (initially hidden) */
+.product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Reveal product info on hover */
+.product-card:hover .product-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Product title styling */
+.product-title {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Product price styling */
+.product-price {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffcc00;
+}
+
+/* Styling for sizes and wishlist link */
+.size-link {
+    text-decoration: none;
+    color: darkgray;
+    font-size: 14px;
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.size-link i {
+    margin-left: 10px;
+}
+
+
+
+
+
